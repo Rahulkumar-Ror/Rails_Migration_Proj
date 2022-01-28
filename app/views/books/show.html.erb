@@ -22,8 +22,8 @@
         <tr>
         <td><%=@book.name %></td>
         <td><%=@book.price %></td>
-        <td><%=@book.author.fname%></td>
-        <td><%=@book.author.lname %></td>
+        <td><%=@book.author.first_name%></td>
+        <td><%=@book.author.last_name %></td>
         <td><%=@book.author.dob%></td>
         <td><%=@book.author.email %></td>   
         <td><%= button_to 'Edit', edit_book_path(@book), method: 'get'%></td>

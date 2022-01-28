@@ -20,8 +20,8 @@
         <tr><td>Author first_name</td><td>Author last_name</td>
         <td>Author dob</td><td>Author email</td><td>Edit</td><td>Delete</td></tr>
         <tr>
-        <td><%=@author.fname%></td>
-        <td><%=@author.lname %></td>
+        <td><%=@author.first_name%></td>
+        <td><%=@author.last_name %></td>
         <td><%=@author.dob%></td>
         <td><%=@author.email %></td>   
         <td><%= button_to 'Edit', edit_author_path(@author), method: 'get'%></td>
