@@ -36,24 +36,9 @@ ActiveRecord::Schema.define(version: 2022_01_28_112827) do
     t.index ["author_id"], name: "index_books_on_author_id"
   end
 
-  create_table "distributors", force: :cascade do |t|
-    t.string "zipcode"
-    t.string "fname"
-  end
-
   create_table "images", force: :cascade do |t|
-    t.string "author_type", null: false
-    t.integer "author_id", null: false
-    t.string "books_type", null: false
-    t.integer "books_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["author_type", "author_id"], name: "index_images_on_author"
-    t.index ["books_type", "books_id"], name: "index_images_on_books"
-  end
-
-  create_table "products", force: :cascade do |t|
-    t.string "name"
   end
 
   add_foreign_key "books", "authors"
