@@ -1,8 +1,8 @@
 <h1> Edit book </h1>
 
 <%= form_with model: @book do |form| %>
-    <%= form.text_field :name, placeholder: 'name' %>
-    <%= form.number_field :price, placeholder: 'price' %>
-    <%= form.number_field :author_id, placeholder: 'author id' %>
+    <%= form.text_field :name, placeholder: 'Name' %>
+    <%= form.number_field :price, placeholder: 'Price' %>
+    <%= form.number_field :author_id, placeholder: 'Author id' %>
     <%= form.submit %>
 <% end %> 
