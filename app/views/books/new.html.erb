@@ -1,0 +1,8 @@
+<h1> new book </h1>
+
+<%= form_with model: @book do |form| %>
+    <%= form.text_field :name, placeholder: 'Name' %>
+    <%= form.number_field :price, placeholder: 'Price' %>
+    <%= form.number_field :author_id, placeholder: 'Author id' %>
+    <%= form.submit "Add Book", class:"btn btn-success"%>
+<% end %> 
